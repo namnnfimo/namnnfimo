@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Holiday Hotel</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="bootstrap/bootstrap.min.css" rel="stylesheet">
+<!--    <link href="css/style.css" rel="stylesheet">-->
+</head>
+<body>
+    <style>
+        header.container{
+            /*background-color: #1b1e21;*/
+            background-color: rgb(65,39,24);
+            max-width: 1000px;
+            height: auto;
+            padding: 0px 0px 0px 0px;
+        }
+        div.container{
+            padding: 0px 0px 0px 0px;
+        }
+        section.pageintro{
+            background-color: rgb(91,58,39);
+            max-width: 1000px;
+            /*width: 1000px;*/
+            height: auto;
+            padding: 0px 0px 0px 0px;
+        }
+        .border-image-holiday {
+            border: solid 5px #e9e9c0;
+            position: relative;
+            left: 20px;
+        }
+        #rowheader{
+            margin: 0px 0px 0px 0px;
+        }
+
+        #rowsocial{
+            margin: 0px 0px 0px 0px;
+        }
+
+        #mainblock{
+            margin: 0px 0px 0px 0px;
+            padding: 40px 0px 20px 0px;
+        }
+
+        #imageblock{
+            margin: 0px 0px 0px 0px;
+            padding: 0px 0px 0px 0px;
+        }
+
+        /*#mainimage{*/
+        /*    position: relative;*/
+        /*    padding: 0px 0px 0px 20px;*/
+        /*}*/
+
+        #rowintro{
+            margin: 0px 0px 0px 0px;
+            /*background-color: rgb(91,58,39);*/
+            /*max-width: 1000px;*/
+            /*height: 580px;*/
+        }
+
+        #threeblock{
+            margin: 0px 0px 0px 0px;
+            padding: 0px 0px 40px 0px;
+        }
+
+        #firstblock{
+            margin: 0px 0px 0px 0px;
+            padding: 0px 0px 0px 0px;
+        }
+
+        #secondblock{
+            margin: 0px 0px 0px 0px;
+            padding: 0px 0px 0px 0px;
+        }
+
+        #thirdblock{
+            margin: 0px 0px 0px 0px;
+            padding: 0px 0px 0px 0px;
+        }
+
+        #firstimage{
+            margin: 0px 0px 0px 0px;
+            padding: 0px 0px 0px 0px;
+            position: relative;
+            left: 20px;
+        }
+
+        #secondimage{
+            margin: 0px 0px 0px 0px;
+            padding: 0px 0px 0px 0px;
+            position: relative;
+            left: 17.79px;
+        }
+
+        #thirdimage{
+            margin: 0px 0px 0px 0px;
+            padding: 0px 0px 0px 0px;
+            position: relative;
+            left: 16.21px;
+        }
+
+        #bookingblock{
+            margin: 0px 0px 0px 0px;
+            /*padding: 0px 0px 0px 0.60px;*/
+        }
+
+        #bookingborder{
+            max-width: 300px;
+            /*flex: 30%;*/
+            height: 500px;
+            border-style: solid;
+            border-width: 1px;
+            border-color: rgb(164,100,97);
+            margin: 40px 0px 0px 0px;
+            position: relative;
+        }
+
+        #bookingformname{
+            margin: 0px 0px 0px 0px;
+            padding: 0px 0px 0px 0px;
+            font-size: 22px;
+            font-family: Georgia;
+            color: rgb(204,204,204);
+        }
+
+        #coltitle{
+            margin: auto;
+            padding: 0px 0px 0px 0px;
+            max-width: 280px;
+            position: relative;
+            left: 24px;
+        }
+
+        #bookingtitle{
+            /*max-width: 280px;*/
+            /*flex: 28%;*/
+            /*margin: 0px 0px 0px 24px;*/
+            margin: auto;
+            padding: 0px 0px 0px 0px;
+            border-bottom: rgb(204,204,204);
+            border-bottom-width: 1px;
+            border-bottom-style: solid;
+            max-width: 280px;
+            position: relative;
+            display: inline-block;
+            /*left: 24px;*/
+        }
+
+        #colroomrates{
+            margin: auto;
+            padding: 0px 0px 0px 0px;
+            max-width: 280px;
+            position: relative;
+            left: 24px;
+        }
+
+        #roomratestitle{
+            /*max-width: 280px;*/
+            /*flex: 28%;*/
+            /*margin: 0px 0px 0px 24px;*/
+            margin: auto;
+            padding: 0px 0px 0px 0px;
+            border-bottom: rgb(204,204,204);
+            border-bottom-width: 1px;
+            border-bottom-style: solid;
+            max-width: 280px;
+            position: relative;
+            display: inline-block;
+            /*left: 24px;*/
+        }
+
+        #roomratesform{
+            margin: 10px 0px 0px 0px;
+            padding: 0px 0px 0px 0px;
+            font-size: 22px;
+            font-family: Georgia;
+            color: rgb(204,204,204);
+        }
+
+        #roomratesimage{
+            margin: 10px 0px 0px 0px;
+            padding: 0px 0px 0px 0px;
+            font-size: 22px;
+            font-family: Georgia;
+            color: rgb(204,204,204);
+        }
+
+        #colroomrateimage{
+            margin: 10px auto 10px auto;
+            padding: 0px 0px 0px 0px;
+            max-width: 280px;
+            position: relative;
+            left: 24px;
+        }
+
+        #yourname{
+            margin: 0px 0px 0px 0px;
+            padding: 0px 0px 0px 0px;
+        }
+
+        #fullname{
+            margin: 10px 0px 0px 24px;
+            padding: 0px 0px 0px 0px;
+            font-size: 13px;
+            font-family: Verdana;
+            color: white;
+            /*flex: 28%;*/
+            /*max-width: 280px;*/
+        }
+
+
+
+        #inputfullname{
+            margin: 0px 15px 0px 24px;
+            /*margin: auto;*/
+            padding: 0px 0px 0px 0px;
+            width: 280px;
+        }
+
+        #yourmail{
+            margin: 0px 0px 0px 0px;
+            padding: 0px 0px 0px 0px;
+        }
+
+        #fullmail{
+            margin: 10px 0px 0px 24px;
+            padding: 0px 0px 0px 0px;
+            font-size: 13px;
+            font-family: Verdana;
+            color: white;
+        }
+
+        #inputfullmail{
+            margin: 0px 15px 0px 24px;
+            padding: 0px 0px 0px 0px;
+            width: 280px;
+        }
+
+        #yourarrival{
+            margin: 0px 0px 0px 0px;
+            padding: 0px 0px 0px 0px;
+        }
+
+        #fullarrival{
+            margin: 10px 0px 0px 24px;
+            padding: 0px 0px 0px 0px;
+            font-size: 13px;
+            font-family: Verdana;
+            color: white;
+        }
+
+        #inputfullarrivaldate{
+            margin: 0px 10px 0px 24px;
+            padding: 0px 0px 0px 0px;
+            width: 80px;
+        }
+
+        #inputfullarrivalmonth{
+            margin: 0px 10px 0px 5.5px;
+            padding: 0px 0px 0px 0px;
+            width: 80px;
+        }
+
+        #inputfullarrivalyear{
+            margin: 0px 10px 0px 5.5px;
+            padding: 0px 0px 0px 0px;
+            width: 80px;
+        }
+
+        #yourdeparture{
+            margin: 0px 0px 0px 0px;
+            padding: 0px 0px 0px 0px;
+        }
+
+        #fulldeparture{
+            margin: 10px 0px 0px 24px;
+            padding: 0px 0px 0px 0px;
+            font-size: 13px;
+            font-family: Verdana;
+            color: white;
+        }
+
+        #inputfulldeparturedate{
+            margin: 0px 10px 0px 24px;
+            padding: 0px 0px 0px 0px;
+            width: 80px;
+        }
+
+        #inputfulldeparturemonth{
+            margin: 0px 10px 0px 5.5px;
+            padding: 0px 0px 0px 0px;
+            width: 80px;
+        }
+
+        #inputfulldepartureyear{
+            margin: 0px 10px 0px 5.5px;
+            padding: 0px 0px 0px 0px;
+            width: 80px;
+        }
+
+        #yourage{
+            margin: 0px 0px 0px 0px;
+            padding: 0px 0px 0px 0px;
+        }
+
+        #adults{
+            margin: 0px 0px 0px 0px;
+            padding: 0px 0px 0px 0px;
+        }
+
+        #children{
+            margin: 0px 0px 0px 0px;
+            padding: 0px 0px 0px 0px;
+        }
+
+        #formadults{
+            padding: 0px 0px 0px 0px;
+        }
+
+        #formchildren{
+            padding: 0px 0px 0px 0px;
+        }
+
+        #fulladults{
+             margin: 10px 0px 0px 24px;
+             padding: 0px 0px 0px 0px;
+             font-size: 13px;
+             font-family: Verdana;
+             color: white;
+         }
+
+        #fullchildren{
+            margin: 10px 0px 0px 24px;
+            padding: 0px 0px 0px 0px;
+            font-size: 13px;
+            font-family: Verdana;
+            color: white;
+        }
+
+        #inputfulladults{
+            margin: 0px 10px 0px 24px;
+            padding: 0px 0px 0px 0px;
+            width: 130px;
+        }
+
+        #inputfullchildren{
+            margin: 0px 10px 0px 15px;
+            padding: 0px 0px 0px 0px;
+            width: 130px;
+        }
+
+        #rowbuttoncheck{
+            margin: 0px 0px 0px 0px;
+            padding: 0px 0px 0px 0px;
+        }
+
+        #buttoncheck{
+            margin: 15px 15px 0px 24px;
+            padding: 0px 0px 0px 0px;
+            width: 280px;
+            border: 1px solid black;
+            background-color: rgb(164,100,97);
+        }
+
+        input[type=text] {
+            background-color: rgb(32,19,11);
+            color: white;
+            border-width: 1px;
+            border-color: rgb(164,100,97);
+            border-style: solid;
+        }
+
+        .clearfix {
+            clear: both;
+        }
+
+        header .menu {
+            float: right;
+            margin: 30.3px 5px 0px 0px;
+        }
+
+        header .menu ul li {
+            float: left;
+            display: inline;
+        }
+        header .menu ul li a {
+            color: #434343;
+            text-decoration: none;
+            /*border: solid 1px transparent;*/
+            display: inline-block;
+            background-color: rgb(143,95,38);
+            margin: 0px 15px 0px 0px;
+
+        }
+        header .menu ul li a span {
+            /*border-radius: 5px 5px 0 0;*/
+            /*border-top: solid 1px transparent;*/
+            /*height: 43px;*/
+            /*max-height: 43px;*/
+            padding: 11px;
+            display: inline-block;
+            color: white;
+            font-size: 14px;
+        }
+        header .menu ul li a:hover, header .menu ul li a.current {
+            background: rgb(255,153,0);
+            /*border: solid 1px #e1e1e1;*/
+            border-bottom: none;
+            /*padding-right: 10px;*/
+            /*border-radius: 5px 5px 0 0;*/
+        }
+        header .menu ul li a:hover span, header .menu ul li a.current span {
+            /*border-top: solid 1px #fff;*/
+        }
+
+        .name{
+            font-family: Georgia;
+            color: white;
+            font-size: 36px;
+            margin: 10px 0px 0px 20px;
+        }
+        #logo{
+            padding: 23px 0px 0px 20px;
+            margin: 0px 0px 0px 0px;
+            /*margin: 23px 0px 0px 20px;*/
+        }
+        #socialimage{
+            padding: 10px 0px 0px 140px;
+            /*margin: 10px 0px 0px 0px;*/
+        }
+        #social{
+            margin: 0px 0px 0px 0px;
+            padding: 0px 0px 0px;
+        }
+
+        /*.col-md-6{*/
+        /*    margin: 0px 0px 0px 0px;*/
+        /*}*/
+        .subname{
+            font-family: Georgia;
+            color: white;
+            font-size: 16px;
+            /*margin: 0px 0px 23px 20px;*/
+        }
+
+        .content{
+            background-color: rgb(70,41,28);
+            width: 1000px;
+            height: 1000px;
+        }
+
+        footer.container{
+            width: 1000px;
+            height: 310px;
+            background-color: rgb(32,19,11);
+        }
+
+        section.container.content{
+            padding: 0px 0px 0px 0px;
+        }
+
+        #maintitle1{
+            padding: 0px 0px 0px 0px;
+        }
+
+        #maintitle1name{
+            margin: 35px 0px 0px 20px;
+            padding: 0px 0px 0px 0px;
+            font-size: 30px;
+            font-family: Georgia;
+            color: rgb(204,204,204);
+        }
+
+        #maintitle2{
+            padding: 0px 0px 0px 0px;
+        }
+
+        #maintitle2name{
+            margin: 30px 0px 0px 20px;
+            padding: 0px 0px 0px 0px;
+            font-size: 30px;
+            font-family: Georgia;
+            color: rgb(204,204,204);
+        }
+
+        #maintitle3{
+            padding: 0px 0px 0px 0px;
+        }
+
+        #maintitle4{
+            padding: 0px 0px 0px 0px;
+        }
+
+        #maintitle3name{
+            margin: 30px 0px 0px 20px;
+            padding: 0px 0px 0px 0px;
+            font-size: 30px;
+            font-family: Georgia;
+            color: rgb(204,204,204);
+        }
+
+        #main1image{
+            margin: 0px 0px 20px 20px;
+        }
+
+        #main2image{
+            margin: 0px 0px 20px 0px;
+        }
+
+        #middle1image{
+            margin: 0px 0px 20px 20px;
+        }
+
+        #middle2image{
+            margin: 0px 0px 20px 0px;
+        }
+
+        #bottom1{
+            margin: 10px 0px 0px 20px;
+            font-size: 12px;
+            font-family: Verdana;
+            color: rgb(204,204,204);
+        }
+        #bottom2{
+            margin: 10px 0px 0px 20px;
+            font-size: 12px;
+            font-family: Verdana;
+            color: rgb(204,204,204);
+        }
+        #bottom3{
+            margin: 10px 0px 0px 20px;
+            /*margin-bottom: 25px;*/
+            font-size: 12px;
+            font-family: Verdana;
+            color: rgb(204,204,204);
+        }
+
+        #footername1{}
+        #footername2{}
+        #footername3{}
+        #footertitle1{
+            margin: 20px 0px 0px 20px;
+            font-size: 22px;
+            font-family: Georgia;
+            color: rgb(204,204,204);
+        }
+        #footertitle2{
+            margin: 20px 0px 0px 20px;
+            font-size: 22px;
+            font-family: Georgia;
+            color: rgb(204,204,204);
+        }
+        #footertitle3{
+            margin: 20px 0px 0px 20px;
+            font-size: 22px;
+            font-family: Georgia;
+            color: rgb(204,204,204);
+        }
+
+    </style>
+
+    <!-- HEADER -->
+    <header class="container">
+        <div class="container">
+            <div class="row" id="rowheader">
+                <div class="col-md-6" id="logo">
+                    <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+                </div>
+                <div class="col-md-6" id="social">
+                    <div class="row" id="rowsocial">
+                        <a id="socialimage"><img src="images/social.png" alt="social"></a>
+                    </div>
+<!--                    <div class="row">-->
+                        <div class="menu clearfix">
+                            <ul>
+                                <li><a href="#" class="current"><span>Home</span></a></li>
+                                <li><a href="#"><span>About</span></a></li>
+                                <li><a href="#"><span>Page</span></a></li>
+                                <li><a href="#"><span>DropDown</span></a></li>
+                                <li><a href="#"><span>Gallery</span></a></li>
+                            </ul>
+                        </div>
+<!--                    </div>-->
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- PAGE INTRO SECTION -->
+    <section class="container pageintro">
+        <div class="row" id="rowintro">
+            <div class="col-md-8" id="imageblock">
+                <div class="row" id="mainblock">
+                    <!--                    <a id="mainimage"><img src="images/main.png" alt="main"></a>-->
+                    <a href="#"><img class="img-fluid border-image-holiday" src="images/image-640x350px.jpg" alt="main"></a>
+                </div>
+                <div class="row" id="threeblock">
+                    <div class="col-md-4" id="firstblock">
+                        <a id="firstimage"><img src="images/1.png" alt="1"></a>
+                    </div>
+                    <div class="col-md-4" id="secondblock">
+                        <a id="secondimage"><img src="images/1.png" alt="2"></a>
+                    </div>
+                    <div class="col-md-4" id="thirdblock">
+                        <a id="thirdimage"><img src="images/1.png" alt="3"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" id="bookingblock">
+                <div class="container" id="bookingborder">
+                    <div class="row" id="bookingform">
+                        <div class="row" id="bookingformname">
+                            <div class="col-md-12" id="coltitle">
+                                <p id="bookingtitle">Booking Online Today !</p>
+                            </div>
+                        </div>
+                        <div class="row" id="yourname">
+                            <form action="/input text name">
+                                <p id="fullname">Your Full Name:</p>
+                                <input type="text" name="inputname" id="inputfullname">
+                            </form>
+                        </div>
+                        <div class="row" id="yourmail">
+                            <form action="/input text mail">
+                                <p id="fullmail">Your Email Address:</p>
+                                <input type="text" name="inputmail" id="inputfullmail">
+                            </form>
+                        </div>
+                        <div class="row" id="yourarrival">
+                            <form action="/input text arrival">
+                                <p id="fullarrival">Arrival Date:</p>
+                                <input type="text" name="inputarrivaldate" id="inputfullarrivaldate">
+                                <input type="text" name="inputarrivalmonth" id="inputfullarrivalmonth">
+                                <input type="text" name="inputarrivalyear" id="inputfullarrivalyear">
+                            </form>
+                        </div>
+                        <div class="row" id="yourdeparture">
+                            <form action="/input text departure">
+                                <p id="fulldeparture">Departure Date:</p>
+                                <input type="text" name="inputdeparturedate" id="inputfulldeparturedate">
+                                <input type="text" name="inputdeparturemonth" id="inputfulldeparturemonth">
+                                <input type="text" name="inputdepartureyear" id="inputfulldepartureyear">
+                            </form>
+                        </div>
+                        <div class="row" id="yourage">
+                            <div class="col-md-6" id="adults">
+                                <form action="/input text adults" id="formadults">
+                                    <p id="fulladults">Adults:</p>
+                                    <input type="text" name="inputadults" id="inputfulladults">
+                                </form>
+                            </div>
+                            <div class="col-md-6" id="children">
+                                <form action="/input text children" id="formchildren">
+                                    <p id="fullchildren">Children:</p>
+                                    <input type="text" name="inputchildren" id="inputfullchildren">
+                                </form>
+                            </div>
+                        </div>
+                        <div class="row" id="rowbuttoncheck">
+                            <button type="button" id="buttoncheck">Check Availability</button>
+                        </div>
+                    </div>
+                    <div class="row" id="roomrates">
+                        <div class="row" id="roomratesform">
+                            <div class="col-md-12" id="colroomrates">
+                                <p id="roomratestitle">Room & Rates</p>
+                            </div>
+                        </div>
+                        <div class="row" id="roomratesimage">
+                            <div class="col-md-12" id="colroomrateimage">
+                                <a href="index.html"><img src="images/roomrate.jpg" alt="logo"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <section class="container content">
+<!--        <div class="container">-->
+<!--            -->
+<!--        </div>-->
+        <div class="col-md-8">
+            <div class="row" id="maintitle1">
+                <p id="maintitle1name">Ametorci Phasellus</p>
+            </div>
+            <div class="row" id="main1" style="margin-top: 20px ">
+                <div class="col-md-6" style="padding-left: 0px">
+                    <a href="index.html" id="main1image"><img src="images/main1.jpg" alt="logo"></a>
+                </div>
+                <div class="col-md-6">
+                    <a href="index.html" id="main2image"><img src="images/main1.jpg" alt="logo"></a>
+                </div>
+            </div>
+            <div class="row" id="maintitle2">
+                <p id="maintitle2name">Ametorci Phasellus</p>
+            </div>
+            <div class="row" id="main2" style="margin-top: 20px ">
+                <div class="col-md-6" style="padding-left: 0px">
+                    <a href="index.html" id="middle1image"><img src="images/middle1.png" alt="logo"></a>
+                </div>
+                <div class="col-md-6">
+                    <a href="index.html" id="middle2image"><img src="images/middle1.png" alt="logo"></a>
+                </div>
+            </div>
+            <div class="row" id="maintitle3">
+                <p id="maintitle3name">Ametorci Phasellus</p>
+            </div>
+            <div class="row" id="maintitle4">
+                <p id="bottom1">This is a W3C standards compliant free PSD website template from OS Templates.</p>
+                <p id="bottom2">This template is distributed using a website template licence, which allows you to use and modify the template for both personal and commercial use when you keep the provided credit links in the footer.</p>
+                <p id="bottom3">For more free PSD templates visit OS-Templates.com</p>
+<!--                <p id="bottom4">Ametorci Phasellus</p>-->
+<!--                <p id="bottom5">Ametorci Phasellus</p>-->
+            </div>
+        </div>
+        <div class="col-md-4">
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="container">
+        <div class="container">
+            <div class="row" id="footerrow">
+                <div class="col-md-4">
+                    <div class="row" id="footername1">
+                        <p id="footertitle1">Stay In The Know !</p>
+                    </div>
+                    <div class="row" id="footerform">
+                        <p id="footeremail" style="color: rgb(204,204,204); font-size: 12px; font-family: Verdana; margin: 25px 0px 0px 20px">Please enter your email to join our mailing list</p>
+                        <form action="/submit-email">
+                            <input type="text" style="margin: 0px 0px 0px 20px;">
+                            <button type="submit" style="background-color: rgb(91,58,39); border-width: 0px; color: white; padding: 0px 6px; margin-top: 10px; height: 28px">GO</button>
+                        </form>
+                        <p id="unsubcribe" style="color: rgb(204,204,204); font-size: 12px; font-family: Verdana; margin: 10px 0px 0px 20px">To unsubsribe please click here »</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="row" id="footername2">
+                        <p id="footertitle2">Shortcuts !</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="row" id="footername3">
+                        <p id="footertitle3">Hotel Details !</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row" id="copyright">
+                <div class="col-md-12">
+
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
